@@ -24,7 +24,7 @@ data "aws_ami" "ubuntu" {
 }
 
 module "my_ec2_instance" {
-  source = "aws-terraform-ec2"
+  source = "./aws-terraform-ec2"
 
   ami_id        = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
