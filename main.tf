@@ -33,7 +33,7 @@ module "my_ec2_instance" {
   }
 }
 
-module "my_ec2_instance" {
+module "my_ec2_instance1" {
   source = "./aws-terraform-ec2"
 
   ami_id        = "ami-0b6c6ebed2801a5cb"
