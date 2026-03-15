@@ -32,3 +32,14 @@ module "my_ec2_instance" {
     Name = "My Instance"
   }
 }
+
+module "my_ec2_instance" {
+  source = "./aws-terraform-ec2"
+
+  ami_id        = "ami-0b6c6ebed2801a5cb"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "My Inst"
+    test = "dev"
+  }
+}
