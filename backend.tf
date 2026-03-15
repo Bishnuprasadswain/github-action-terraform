@@ -1,7 +1,7 @@
 terraform {
- backend "s3" {
- bucket = "my-buck-99"
- key = "terraform.tfstate"
- region = "ap-south-1"
-      }
+  backend "s3" {
+    bucket = "ny-gh-action-bucket "
+    key    = "mystate/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
