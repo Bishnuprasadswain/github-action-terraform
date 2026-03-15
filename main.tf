@@ -26,7 +26,7 @@
 module "my_ec2_instance" {
   source = "./aws-terraform-ec2"
 
-  ami_id        = "ami-0030e4319cbf4dbf2"
+  ami_id        = "ami-0b6c6ebed2801a5cb"
   instance_type = "t3.micro"
   tags = {
     Name = "My Instance"
